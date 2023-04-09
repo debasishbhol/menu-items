@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ?================ FAVICON AND JQUERY ================?-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <!-- ?================ GOOGLE FONTS LINK ================?-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ?================ CUSTOM CSS LINK ================?-->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- ?================ PRELOAD IMAGE ================?-->
+
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- ?================ PRELOADER ================?-->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+    </div>
+
+    <main>
+      <article>
+        <section
+          class="section service bg-block-10 text-center"
+          aria-label="service">
+          <div class="container">
+            <a href="https://play.google.com/store/apps/details?id=infinitedreams.equibazzar.user" class="logo" target="_blank">
+                <img
+                    src="./assets/images/logo.png"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                    alt="Equibazzar"
+                    class="equibazzar-logo"
+                />
+            </a>
+            <p id="restaurant-name" class="section-subtitle label-3"></p>
+            <!-- <p id="restaurant-name" class="section-subtitle label-3">Flavors For Royalty</p> -->
+            <input type="text" placeholder="Search" class="searchbar">
+        </div>
+        </section>
+
+        <!-- ?================ MENU ================?-->
+
+        <section class="section menu" aria-label="menu-label" id="menu">
+          <div class="container">
+            <p id="menu-heading" class="section-subtitle text-center label-2">
+                Bestseller
+            </p>
+
+            <h2 class="headline-1 section-title text-center"></h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">₹205.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">₹140.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">₹180.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">₹220.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-5.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Olivas Rellenas"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Olivas Rellenas</a>
+                      </h3>
+
+                      <span class="span title-2">₹125.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Avocados with crab meat, red onion, crab salad stuffed red
+                      bell pepper and green bell pepper.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-6.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Opu Fish"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Opu Fish</a>
+                      </h3>
+
+                      <span class="span title-2">₹180.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" id="all-items-btn" onclick="listAllItems()" class="btn btn-primary">
+              <span class="text text-1">View Complete Menu</span>
+              <span class="text text-2" aria-hidden="true">View Complete Menu</span>
+            </a>
+
+            <a href="#" id="special-items-btn" onclick="listSpecialItems()" class="btn btn-primary" style="display: none;">
+                <span class="text text-1">View Special Menu</span>
+                <span class="text text-2" aria-hidden="true">View Special Menu</span>
+              </a>
+
+            <img
+              src="./assets/images/shape-5.png"
+              width="921"
+              height="1036"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-3 move-anim"
+            />
+          </div>
+        </section>
+
+    <!-- ?================ FOOTER ================?-->
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url(./assets/images/footer-bg.jpg)"
+    >
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand has-before has-after">
+            <a href="https://play.google.com/store/apps/details?id=infinitedreams.equibazzar.user" class="logo" target="_blank">
+              <img
+                src="./assets/images/google-play.png"
+                width="160"
+                height="50"
+                loading="lazy"
+                alt="fav restaurant"
+              />
+            </a>
+
+            <address id="address" class="body-4">
+            </address>
+
+            <!-- <a id="mail" href="mailto:booking@alpha97.com" class="body-4 contact-link"
+              >booking@alpha97.com</a
+            >
+
+            <a id="phone" href="tel:+919056558975" class="body-4 contact-link"
+              >Booking Request : +919056558975</a
+            > -->
+
+            <p class="body-4">Open : 09:00 am - 11:00 pm</p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2023 debasishbhol. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ?================ BACK TO TOP ================?-->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- ?================ CUSTOM JS LINK ================?-->
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ?================ IONICON LINK ================?-->
+
+    <script type="text/javascript">
+        loadData();
+        $('.searchbar').on('input', function(){
+            let a = $(this).val();
+            console.log(a);
+            let items = searchMenuItemByName(a);
+            if(items == '-1') {
+              listSpecialItems();
+            } else {
+              listItems(items);
+            }
+        });
+     </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
